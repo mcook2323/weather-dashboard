@@ -22,16 +22,21 @@ async function checkweather(city) {
 
     saveSearch(city);
     displaySearchHistory();
-  } else {
-    alert('Please enter a valid city');
-  }
+  } 
 }
 
-
+searchBox.addEventListener('keypress', (event) => {
+  if (event.key === 'Enter') {
+    const city = searchBox.value;
+    checkweather(city);
+    dayForecast(city);
+  }
+});
 searchBtn.addEventListener('click', ()=>{
   const city = searchBox.value;
   checkweather(city);
   dayForecast(city);
+
 })
 
 function dayForecast(city) {
