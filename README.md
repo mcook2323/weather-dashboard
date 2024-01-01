@@ -11,4 +11,4 @@ Two screen shots of the site including the search, history, and displayed inform
 
 ## Live link to the site
 
-[Weather Dashboard]()
+[Weather Dashboard](https://mcook2323.github.io/weather-dashboard/)
